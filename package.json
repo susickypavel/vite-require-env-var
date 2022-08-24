@@ -1,7 +1,7 @@
 {
   "name": "vite-require-env-var",
   "description": "Vite.js plugin that makes build fail if a required environment variable(s) is missing",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,7 +11,8 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {
     "vite": "^3.0.0"

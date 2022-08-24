@@ -28,9 +28,13 @@ export function requireEnvVar(requiredVariables: string[]): Plugin {
         return;
       }
 
+      console.log("");
+
       missingVariables.forEach((current) => {
-        console.log(`\nMissing environment variable: ${current}`);
+        console.log(`Missing environment variable: ${current}`);
       });
+
+      console.log("");
 
       if (mode !== "development") {
         process.exit(1);

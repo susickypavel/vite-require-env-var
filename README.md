@@ -2,6 +2,8 @@
 
 Vite.js plugin that makes build fail if a required environment variable(s) is missing
 
+![Example CLI output by vite-require-env-var plugin](./docs/images/example.png)
+
 # 1. Installation
 
 ## 1.1 Install dependency
@@ -24,6 +26,6 @@ import { defineConfig } from "vite";
 import { requireEnvVar } from "vite-require-env-var";
 
 export default defineConfig({
-  plugins: [requireEnvVar()],
+  plugins: [requireEnvVar(["VARIABLE_1", "VITE_URL"])],
 });
 ```
