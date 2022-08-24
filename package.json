@@ -1,0 +1,39 @@
+{
+  "name": "vite-require-env-var",
+  "description": "Vite.js plugin that makes build fail if a required environment variable(s) is missing",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "peerDependencies": {
+    "vite": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.13",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.9"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Thesoreon/vite-require-environment-variable.git"
+  },
+  "bugs": "https://github.com/Thesoreon/vite-require-environment-variable/issues",
+  "homepage": "https://github.com/Thesoreon/vite-require-environment-variable",
+  "author": {
+    "name": "Pavel Sušický",
+    "url": "https://frontendista.cz"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "outDir": "./dist",
+    "target": "ES2022",
+    "declaration": true,
+    "moduleResolution": "Node"
+  },
+  "include": ["src/**/*.ts"]
+}
