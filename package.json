@@ -11,11 +11,15 @@
     "README.md"
   ],
   "scripts": {
+    "watch": "tsc -p . -w",
     "build": "tsc -p .",
     "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {
     "vite": "^3.0.0"
+  },
+  "dependencies": {
+    "picocolors": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^18.7.13",

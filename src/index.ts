@@ -1,3 +1,4 @@
+import pc from "picocolors";
 import { loadEnv, type Plugin } from "vite";
 
 /**
@@ -31,7 +32,9 @@ export function requireEnvVar(requiredVariables: string[]): Plugin {
       console.log("");
 
       missingVariables.forEach((current) => {
-        console.log(`Missing environment variable: ${current}`);
+        console.log(
+          pc.red(`> Missing environment variable: ${pc.bold(current)}`)
+        );
       });
 
       console.log("");
